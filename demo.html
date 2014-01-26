@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fullScrrenBg</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		h1{
+			margin: 0;
+		}
+		header{
+			background-color: rgba(255,255,255,0.5);
+			padding: 50px;
+		}
+		#bgImg{
+			position: absolute;
+			z-index: -1;
+		}
+		/* Source Code CSS */
+		pre.code {
+		    font-size: 12px;
+		    /* line-height:1.2em; */
+		    border:1px solid #aaa;
+		    background:#f0f0f0;
+		    padding:0.5em; 
+		    overflow: auto;
+		    width: 50%;
+		}
+		pre.code span.tag		{ color: #0000ff;	}
+		pre.code span.attr 		{ color: #000; 		}
+		pre.code span.value		{ color: #900; 		}
+		pre.code span.str 		{ color: #009900; 	}
+		pre.code span.num 		{ color: #009900; 	}
+		pre.code span.keyword	{ color: #0000ff; 	}
+		pre.code span.rem		{ color: #909; 		}
+		pre.code span.variable	{ color: #500050;	}
+
+
+	</style>
+</head>
+<body>
+	<img src="img/a1180_008302.jpg" height="318" width="481" alt="" id="bgImg">
+	<header>
+		<h1>fullScreen.js</h1>
+		<p>fullScreen.jsは要素をウインドウサイズに合わせるプラグインです</p>
+	</header>
+	<div>
+		<h2>使い方</h2>
+		<pre class="code"><span class="tag">&lt;script <span class="attr">src=</span><span class="value">&quot;http://code.jquery.com/jquery-1.9.1.min.js&quot;</span>&gt;</span><span class="tag">&lt;/script&gt;</span>
+<span class="tag">&lt;script <span class="attr">src=</span><span class="value">&quot;fullScreen.js&quot;</span>&gt;</span><span class="tag">&lt;/script&gt;</span></pre>
+	</div>
+	<script src="../../jquery-2.0.1.min.js"></script>
+	<script src="fullScreen.js"></script>
+	<script>
+		$("#bgImg").fullScreen();
+	</script>
+</body>
+</html>
